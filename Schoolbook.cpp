@@ -33,9 +33,9 @@ int Schoolbook::get_grade()
 
 void Schoolbook::read()
 {
-	std::cout << "You`re reading a schoolbook " 
-		<< name << " from a year " 
-		<< year << " author " 
-		<< author << " for " 
-		<< grade << " grade" << std::endl;
+	std::cout << "Schoolbook. Name:" 
+		<< name << " Year:" 
+		<< year << " Author:" 
+		<< author << " Grade:" 
+		<< grade << std::endl;
 }

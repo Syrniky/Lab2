@@ -31,8 +31,8 @@ int Magazine::get_month()
 }
 
 void Magazine::read() {
-	std::cout << "You`re reading a magazine " 
-		<< name << " from year " 
-		<< year << " and month " 
+	std::cout << "Magazine. Name:" 
+		<< name << " Year:" 
+		<< year << " Month:" 
 		<< month << std::endl;
 }

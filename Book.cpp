@@ -46,8 +46,8 @@ char* Book::get_author()
 
 void Book::read()
 {
-	std::cout << "You`re reading a book " 
-		<< name << " from year " 
-		<< year << " and author " 
+	std::cout << "Book. Name: " 
+		<< name << " year:" 
+		<< year << " Author: " 
 		<< author << std::endl;
 }

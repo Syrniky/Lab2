@@ -4,10 +4,8 @@
 class Print_publication
 {
 protected:
-	static Print_publication* begin;
 	char* name;
 	int year;
-	Print_publication* next;
 
 public:
 	Print_publication();
@@ -22,8 +20,5 @@ public:
 
 	virtual void read() = 0;
 
-	void add();
-	void delete_from_list();
-
-	static void print_all();
+	static void print(Print_publication* publication);
 };

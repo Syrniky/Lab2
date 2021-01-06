@@ -143,12 +143,14 @@
     <ClCompile Include="Lab2.cpp" />
     <ClCompile Include="Magazine.cpp" />
     <ClCompile Include="Print_publication.cpp" />
+    <ClCompile Include="Publisher.cpp" />
     <ClCompile Include="Schoolbook.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h" />
     <ClInclude Include="Magazine.h" />
     <ClInclude Include="Print_publication.h" />
+    <ClInclude Include="Publisher.h" />
     <ClInclude Include="Schoolbook.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
