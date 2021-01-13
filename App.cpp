@@ -6,8 +6,6 @@
 #include "Schoolbook.h"
 using namespace std;
 
-
-
 Command App::string_to_command(string command)
 {
 	if (command == "printAll") 
@@ -29,6 +27,10 @@ Command App::string_to_command(string command)
 	if (command == "count")
 	{
 		return COUNT;
+	}
+	if (command == "help")
+	{
+		return HELP;
 	}
 	if (command == "exit")
 	{
@@ -92,8 +94,11 @@ void App::execute()
 		case COUNT:
 			count();
 			break;
+		case HELP:
+			help();
+			break;
 		case NO_COMMAND:
-			cout << "There is no such command" << endl;
+			cout << "There is no such command, to see available commands enter \"help\"" << endl;
 			break;
 		}
 	}
@@ -168,3 +173,26 @@ void App::count()
 {
 	cout << publisher->count() << endl;
 }
+
+void App::help()
+{
+	for (string s : HELP_TEXT)
+	{
+		cout << s << endl;
+	}
+}
+
+vector<string> App::HELP_TEXT = { 
+	"List and templates of possible commands:",
+	"----------------------------------------",
+	"printAll",
+	"add",
+	"	magazine name(string) year(int) month(int)",
+	"	book name(string) year(int) author(string)",
+	"	schoolbook name(string) year(int) author(string) grade(int)",
+	"delete number(int)",
+	"printOne number(int)",
+	"count",
+	"exit",
+	"----------------------------------------",
+};
