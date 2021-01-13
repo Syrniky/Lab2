@@ -7,29 +7,14 @@
 #include "Book.h"
 #include "Schoolbook.h"
 #include "Publisher.h"
+#include "App.h"
 
 using namespace std;
 
 int main()
 {
-    Print_publication* magazine = new Magazine();
-    char* name = new char[] {"Name"};
-    char* author = new char[] {"Author"};
-    char* publisher_name = new char[] {"Publisher"};
-    Print_publication* book = new Schoolbook(name, 2005, author, 5);
-    Publisher* publisher = new Publisher(publisher_name);
-    publisher->add_publication(magazine);
-    publisher->add_publication(book);
-    publisher->print_publisher_information();
-    cout << "--------------------------------------\n";
-   
-    publisher->remove_and_delete_publication(book);
-
-    publisher->print_publisher_information();
-    delete publisher;
-    delete[] name;
-    delete[] author;
-   
+    App app;
+    app.execute();
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

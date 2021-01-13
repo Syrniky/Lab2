@@ -59,7 +59,10 @@ int Print_publication::get_year()
 
 void Print_publication::print(Print_publication* publication)
 {
-	publication->read();
+	if (publication != NULL)
+	{
+		publication->read();
+	}
 }
 
 

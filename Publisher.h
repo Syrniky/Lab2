@@ -23,10 +23,13 @@ public:
 	void set_name(char* a_name);
 	char* get_name();
 
+	Print_publication* get_by_number(int number);
+	
 	void add_publication(Print_publication* publication);
 	void remove_and_delete_publication(Print_publication* publication);
 	void print_publisher_information();
 	void for_each(void (*function)(Print_publication*));
+	int count();
 };
 
 
